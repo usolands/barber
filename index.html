@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Barber</title>
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <div class="overlay"></div>
+    <header class="header" id="header">
+      <a href="#" class="burger ">
+        <span></span>
+      </a>
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <a href="/" class="header__logo logo">
+              <img src="img/logo.svg" alt="logo">
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="/" class="header__nav-link">Home</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#history" class="header__nav-link">History</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#services" class="header__nav-link">Service</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#gallery" class="header__nav-link">Gallary</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__btn-box">
+              <ul class="header__btn-icons">
+                <li class="header__icon-item">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.9944 26.5555C13.4467 26.5555 6.99969 27.7455 6.99969 32.5055C6.99969 37.2673 13.4064 38.4993 20.9944 38.4993C28.5422 38.4993 34.9892 37.311 34.9892 32.5493C34.9892 27.7875 28.5842 26.5555 20.9944 26.5555Z"
+                      fill="#99BAED" />
+                    <path opacity="0.4"
+                      d="M20.9944 22.0215C26.1359 22.0215 30.2554 17.9003 30.2554 12.7605C30.2554 7.62076 26.1359 3.49951 20.9944 3.49951C15.8547 3.49951 11.7335 7.62076 11.7335 12.7605C11.7335 17.9003 15.8547 22.0215 20.9944 22.0215Z"
+                      fill="#A4A4A4" />
+                  </svg>
+                </li>
+                <li class="header__icon-item">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_13)">
+                      <path
+                        d="M34.5966 20.3793C33.3183 18.8865 32.7374 17.5929 32.7374 15.395V14.6477C32.7374 11.7837 32.0782 9.93837 30.6451 8.09303C28.4363 5.22723 24.7177 3.5 21.0774 3.5H20.9227C17.3589 3.5 13.7569 5.14792 11.5098 7.8974C9.99833 9.77974 9.26263 11.7044 9.26263 14.6477V15.395C9.26263 17.5929 8.71997 18.8865 7.40336 20.3793C6.43459 21.4791 6.125 22.8926 6.125 24.4225C6.125 25.9541 6.62765 27.4046 7.63642 28.5838C8.95304 29.9973 10.8123 30.8996 12.7116 31.0565C15.4613 31.3701 18.211 31.4883 21.0009 31.4883C23.789 31.4883 26.5388 31.2909 29.2901 31.0565C31.1876 30.8996 33.047 29.9973 34.3635 28.5838C35.3707 27.4046 35.875 25.9541 35.875 24.4225C35.875 22.8926 35.5654 21.4791 34.5966 20.3793Z"
+                        fill="#99BAED" />
+                      <path opacity="0.4"
+                        d="M24.5152 33.6497C23.6403 33.4628 18.3095 33.4628 17.4346 33.6497C16.6868 33.8224 15.878 34.2242 15.878 35.1055C15.9215 35.9462 16.4137 36.6882 17.0955 37.1588L17.0937 37.1605C17.9756 37.8479 19.0104 38.2849 20.094 38.4419C20.6715 38.5212 21.2593 38.5177 21.8576 38.4419C22.9395 38.2849 23.9742 37.8479 24.8561 37.1605L24.8543 37.1588C25.5361 36.6882 26.0284 35.9462 26.0718 35.1055C26.0718 34.2242 25.2631 33.8224 24.5152 33.6497Z"
+                        fill="#AEAEAE" />
+                      <circle cx="29.5686" cy="7.55395" r="7.95443" transform="rotate(-0.887255 29.5686 7.55395)"
+                        fill="#FF5050" stroke="white" />
+                      <path
+                        d="M29.3749 5.24208C28.6683 5.25303 28.0278 5.4363 27.4532 5.79191L27.6993 6.82822C28.2873 6.47907 28.8079 6.30099 29.2612 6.29397C29.5945 6.28881 29.8588 6.35139 30.0542 6.48171C30.2561 6.60527 30.359 6.79036 30.3628 7.037C30.3658 7.23031 30.289 7.43819 30.1325 7.66064C29.9759 7.88309 29.7266 8.14365 29.3845 8.44232L27.3913 10.1934L27.4048 11.0633L31.8243 10.9948L31.689 10.0068L29.1593 10.046L30.0969 9.24138C30.6035 8.80015 30.9577 8.42129 31.1595 8.10479C31.3612 7.7883 31.4587 7.41008 31.4519 6.97013C31.4468 6.63684 31.3588 6.33816 31.188 6.07411C31.0172 5.81005 30.7773 5.60374 30.4683 5.45518C30.1593 5.30661 29.7949 5.23558 29.3749 5.24208Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_13">
+                        <rect width="42" height="42" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </li>
+              </ul>
+              <a href="#" class="header__top-btn button">Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__body">
+        <div class="header__body-content">
+          <div class="header__body-container container">
+            <div class="header__body-main">
+              <h1 class="header__body-title">
+                <span>Hairstyle</span> Reflects The Personality Inside You
+              </h1>
+              <p class="header__body-text">
+                It is a long established fact that a reader will be distracted by the readable content of a page w
+                hen looking at.
+              </p>
+              <a href="#" class="header__body-btn button">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__body-image">
+          <img src="img/bg-header.jpg" alt="bg-header">
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__history history" id="history">
+        <div class="container">
+          <div class="history__inner">
+            <div class="history__box-image">
+              <img src="img/bg-history.jpg" alt="history">
+            </div>
+            <div class="history__content">
+              <h2 class="history__title title">
+                Our <span>History</span>
+              </h2>
+              <p class="history__text text">
+                It is a long established fact that a reader will be distracted by the readable content of a page w
+                hen looking at.
+              </p>
+              <p class="history__text text">
+                It is a long established fact that a reader will be distracted by the readable content of a page w
+                hen looking at.
+              </p>
+              <a href="#" class="history__body-btn button">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__services services" id="services">
+        <div class="container">
+          <div class="services__inner">
+            <div class="services__header">
+              <h2 class="services__title title title--center">
+                Services We<br>
+                <span>Provide</span>
+              </h2>
+            </div>
+            <div class="services__row">
+              <ul class="services__row-content">
+                <li class="services__content-item">
+                  <a href="#" class="services__content-link">
+                    <div class="services__content-icon">
+                      <svg width="66" height="66" viewBox="0 0 58 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.0398 0.995252C5.73254 4.01129 4.59742 10.0079 7.61344 14.316L23.1238 36.4676L17.4831 44.5224C12.305 41.5232 5.6043 42.934 2.10818 47.9276C-1.58299 53.2009 -0.30203 60.4664 4.9702 64.1591C10.2427 67.8502 17.5097 66.5702 21.2024 61.2968C23.736 57.6782 23.9259 53.1203 22.0925 49.4242L29.0002 39.5584L35.9071 49.4233C34.0746 53.1194 34.2645 57.6771 36.7972 61.2959C40.4899 66.569 47.7562 67.8491 53.0285 64.1582C58.3016 60.4654 59.5826 53.1992 55.8914 47.9268C52.3953 42.9338 45.6946 41.5233 40.5165 44.5217L34.8758 36.4668L50.3852 14.3161C53.4022 10.008 52.2663 4.01141 47.9588 0.99537L29.0001 28.0745L10.0398 0.995252ZM17.7226 54.5865C17.7226 57.9231 15.0175 60.6283 11.6808 60.6283C8.3442 60.6283 5.63911 57.923 5.63911 54.5865C5.63911 51.2491 8.34419 48.5447 11.6808 48.5447C15.0175 48.5447 17.7226 51.2491 17.7226 54.5865ZM52.3618 54.5865C52.3618 57.9231 49.6567 60.6282 46.32 60.6282C42.9834 60.6282 40.2783 57.9231 40.2783 54.5865C40.2783 51.2491 42.9834 48.5447 46.32 48.5447C49.6566 48.5447 52.3618 51.249 52.3618 54.5865Z"
+                          fill="#008FDD" />
+                      </svg>
+                    </div>
+                    <h3 class="services__content-title">
+                      Hair Cut
+                    </h3>
+                    <p class="services__content-text">
+                      long established fact that a reacted by the readable content of hen looking at.
+                    </p>
+                  </a>
+                </li>
+                <li class="services__content-item">
+                  <a href="#" class="services__content-link">
+                    <div class="services__content-icon">
+                      <svg width="66" height="66" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_11_92)">
+                          <path d="M46.1062 38.4172L46.1062 33.8364L50.687 33.8364L50.687 38.4172L46.1062 38.4172Z"
+                            fill="#008FDD" />
+                          <path
+                            d="M46.7775 62.0411C46.3451 62.4735 46.1066 63.0487 46.1066 63.6602L46.107 72.2513C46.1066 72.8631 46.3451 73.4384 46.7775 73.8708C47.2102 74.3035 47.7851 74.5417 48.397 74.5413C49.0084 74.5413 49.5833 74.3032 50.0161 73.8704C50.4485 73.438 50.687 72.8628 50.687 72.2513L50.6874 63.6602C50.6874 63.0487 50.4492 62.4731 50.0168 62.0407C49.5841 61.608 49.0092 61.3698 48.397 61.3698C47.7851 61.3702 47.2102 61.6083 46.7775 62.0411Z"
+                            fill="#008FDD" />
+                          <path
+                            d="M54.6977 40.4214C54.6977 40.9752 54.4732 41.4767 54.1102 41.8396C53.7476 42.2022 53.2462 42.4267 52.6923 42.4267L44.1012 42.4271C43.5695 42.4271 43.0592 42.2159 42.6834 41.84C42.3071 41.4637 42.0959 40.9534 42.0959 40.4217L42.0963 33.8356L30.2839 33.836L30.2836 71.1775C30.2836 76.0161 32.1678 80.5647 35.5888 83.9857C38.5327 86.9297 42.3119 88.7341 46.3916 89.1806L46.3916 93.9578C46.3916 95.0655 47.2892 95.9631 48.397 95.9631C48.9508 95.9631 49.4519 95.739 49.8149 95.376C50.1778 95.0131 50.4023 94.5116 50.4019 93.9582L50.4019 89.1809C54.482 88.7342 58.2612 86.9297 61.2052 83.9857C64.6262 80.5647 66.51 76.0157 66.5104 71.1775L66.5104 33.8356L54.6977 33.8356V40.4214ZM54.698 63.6602L54.6977 72.2513C54.6973 73.9339 54.0423 75.5165 52.8522 76.7065C51.6622 77.8966 50.08 78.552 48.397 78.552C46.714 78.552 45.1318 77.8966 43.9417 76.7065C42.7517 75.5165 42.0963 73.9343 42.0963 72.2513L42.0963 63.6606C42.0963 61.9776 42.7517 60.3954 43.9417 59.2053C45.1322 58.0149 46.7143 57.3595 48.3973 57.3595C50.08 57.3599 51.6625 58.0149 52.8526 59.205C54.0423 60.3954 54.6977 61.9776 54.698 63.6602Z"
+                            fill="#008FDD" />
+                          <path
+                            d="M64.505 16.9389C63.3973 16.9389 62.4997 17.8365 62.4997 18.9443V21.2343H60.0672V18.9443C60.0672 17.8365 59.1695 16.9389 58.0622 16.9385C56.9548 16.9389 56.0572 17.8365 56.0568 18.9439L56.0565 21.2343L53.6239 21.2343V18.9443C53.6239 17.8365 52.7263 16.9389 51.619 16.9385C50.5116 16.9389 49.614 17.8365 49.6136 18.9439L49.6132 21.2343L47.1807 21.2343V18.9435C47.1807 17.8365 46.2827 16.9385 45.1757 16.9385C44.068 16.9385 43.1704 17.8362 43.1704 18.9439L43.17 21.2343H40.7375L40.7371 18.9439C40.7375 17.8365 39.8395 16.9385 38.7321 16.9389C37.6244 16.9389 36.7268 17.8365 36.7268 18.9443V21.2343L34.2939 21.2346L34.2935 18.9443C34.2939 17.8369 33.3959 16.9389 32.2885 16.9393C31.1808 16.9393 30.2832 17.8369 30.2832 18.9446L30.2832 23.2396C30.2836 23.24 30.2836 23.24 30.2836 23.2407V29.8257L66.5104 29.825L66.51 23.2404C66.51 23.2404 66.5104 23.24 66.5104 23.2392L66.51 18.9439C66.5104 17.8365 65.6124 16.9385 64.505 16.9389Z"
+                            fill="#008FDD" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_11_92">
+                            <rect width="68.4436" height="68.4436" fill="white"
+                              transform="translate(0 48.397) rotate(-45)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h3 class="services__content-title">
+                      Beard Cut
+                    </h3>
+                    <p class="services__content-text">
+                      long established fact that a reacted by the readable content of hen looking at.
+                    </p>
+                  </a>
+                </li>
+                <li class="services__content-item">
+                  <a href="#" class="services__content-link">
+                    <div class="services__content-icon">
+                      <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.73438 0V7.73438H5.80078V11.6016H21.2695V7.73438H19.3359V3.86719H28.2033L31.504 7.16783L34.2381 4.43373L29.8045 0H7.73438Z"
+                          fill="#008FDD" />
+                        <path
+                          d="M46.5352 52.3379C46.5352 53.4029 47.4019 54.2695 48.4688 54.2695C49.5338 54.2695 50.4023 53.4028 50.4023 52.3359C50.3853 51.743 49.581 50.0587 48.4688 48.1855C47.3546 50.0624 46.5502 51.7468 46.5352 52.3379Z"
+                          fill="#008FDD" />
+                        <path
+                          d="M58.2656 31.0664V27.1992H38.6719V31.0664H35.5431C32.2221 37.7764 30.9375 43.8484 30.9375 48.4688C30.9375 53.0846 32.219 59.2836 35.5431 66H61.3946C64.7155 59.2898 66 53.0891 66 48.4688C66 43.8529 64.7185 37.7828 61.3944 31.0664H58.2656ZM48.4688 58.1367C45.2701 58.1367 42.668 55.5346 42.668 52.3359C42.668 49.8642 45.6118 45.3361 46.8769 43.5026L48.4688 41.199L50.0606 43.5026C51.3257 45.3361 54.2695 49.8642 54.2695 52.3359C54.2695 55.5346 51.6674 58.1367 48.4688 58.1367Z"
+                          fill="#008FDD" />
+                        <path d="M38.6719 11.6016H58.2656V23.332H38.6719V11.6016Z" fill="#008FDD" />
+                        <path
+                          d="M11.6016 44.6035C11.6016 45.6684 12.4683 46.5352 13.5352 46.5352C14.6002 46.5352 15.4688 45.6684 15.4688 44.6016C15.4517 44.0086 14.6474 42.3243 13.5352 40.4512C12.421 42.328 11.6166 44.0125 11.6016 44.6035Z"
+                          fill="#008FDD" />
+                        <path d="M0 58.1367H27.0703V66H0V58.1367Z" fill="#008FDD" />
+                        <path d="M0 15.4688H27.0703V23.332H0V15.4688Z" fill="#008FDD" />
+                        <path
+                          d="M27.0703 27.1992H0V54.2695H27.0703V27.1992ZM13.5352 50.4023C10.3365 50.4023 7.73438 47.8002 7.73438 44.6016C7.73438 42.1298 10.6782 37.6017 11.9433 35.7683L13.5352 33.4646L15.127 35.7683C16.3921 37.6017 19.3359 42.1298 19.3359 44.6016C19.3359 47.8002 16.7338 50.4023 13.5352 50.4023Z"
+                          fill="#008FDD" />
+                      </svg>
+                    </div>
+                    <h3 class="services__content-title">
+                      Facial Pack
+                    </h3>
+                    <p class="services__content-text">
+                      long established fact that a reacted by the readable content of hen looking at.
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__gallery gallery" id="gallery">
+        <div class="container">
+          <div class="gallery__inner">
+            <div class="gallery__header">
+              <h2 class="gallery__title title title--center">
+                Our <span>Gallery</span>
+              </h2>
+            </div>
+            <div class="gallery__body">
+              <ul class="gallery__list">
+                <li class="gallery__list-item">
+                  <a href="#" class="gallery__list-link">
+                    <img src="img/gallery/1.jpg" alt="haircat1">
+                  </a>
+                </li>
+                <li class="gallery__list-item">
+                  <a href="#" class="gallery__list-link">
+                    <img src="img/gallery/2.jpg" alt="haircat1">
+                  </a>
+                </li>
+                <li class="gallery__list-item">
+                  <a href="#" class="gallery__list-link">
+                    <img src="img/gallery/3.jpg" alt="haircat1">
+                  </a>
+                </li>
+                <li class="gallery__list-item">
+                  <a href="#" class="gallery__list-link">
+                    <img src="img/gallery/4.jpg" alt="haircat1">
+                  </a>
+                </li>
+                <li class="gallery__list-item">
+                  <a href="#" class="gallery__list-link">
+                    <img src="img/gallery/5.jpg" alt="haircat1">
+                  </a>
+                </li>
+                <li class="gallery__list-item">
+                  <a href="#" class="gallery__list-link">
+                    <img src="img/gallery/6.jpg" alt="haircat1">
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="gallery__body-btn button">View All</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img src="img/footer-logo.svg" alt="footer-logo">
+          </div>
+          <div class="footer__text text">
+            It is a long established fact that a reader will be distracted by the readable
+          </div>
+          <ul class="footer__socials">
+            <li class="footer__socials-item">
+              <a href="#" class="footer__socials-link">
+                <svg width="19" height="38" viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.5312 6.30958H19V0.267583C18.4016 0.18525 16.3434 0 13.9464 0C8.94512 0 5.51908 3.14608 5.51908 8.92842V14.25H6.10352e-05V21.0045H5.51908V38H12.2857V21.0061H17.5815L18.4221 14.2516H12.2841V9.59817C12.2857 7.64592 12.8113 6.30958 15.5312 6.30958Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a href="#" class="footer__socials-link">
+                <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M31.6923 3.0484C30.5137 3.56538 29.2579 3.90806 27.9486 4.07444C29.2955 3.27025 30.3236 2.00652 30.8069 0.483308C29.5511 1.23204 28.1645 1.7609 26.6869 2.05604C25.4944 0.786366 23.7949 0 21.9409 0C18.3439 0 15.448 2.91965 15.448 6.4989C15.448 7.0139 15.4916 7.5091 15.5985 7.98052C10.197 7.71708 5.4174 5.12821 2.20657 1.1845C1.64602 2.15706 1.31721 3.27025 1.31721 4.46862C1.31721 6.71877 2.47596 8.7134 4.20319 9.86819C3.15932 9.84838 2.13527 9.54533 1.26769 9.06796C1.26769 9.08777 1.26769 9.11352 1.26769 9.13927C1.26769 12.2966 3.51982 14.9192 6.47314 15.5233C5.94428 15.6679 5.36788 15.7372 4.76969 15.7372C4.35372 15.7372 3.9338 15.7134 3.53963 15.6263C4.38145 18.1993 6.77026 20.0909 9.61068 20.1523C7.40014 21.8816 4.5934 22.9234 1.5549 22.9234C1.02208 22.9234 0.511038 22.8997 0 22.8343C2.87805 24.6903 6.28893 25.75 9.96722 25.75C21.9231 25.75 28.4597 15.8462 28.4597 7.2615C28.4597 6.97429 28.4497 6.69698 28.4359 6.42165C29.7254 5.50654 30.8088 4.36363 31.6923 3.0484Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a href="#" class="footer__socials-link">
+                <svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24.3158 12.2804V8.59626H21.8596V12.2804H18.1754V14.7365H21.8596V18.4206H24.3158V14.7365H28V12.2804H24.3158ZM14.8596 16.4557L13.5087 15.4733C13.0175 15.1049 12.5263 14.6136 12.5263 13.754C12.5263 12.8944 13.1404 12.1576 13.7544 11.7892C15.3509 10.5611 16.9474 9.21028 16.9474 6.5086C16.9474 3.92972 15.3509 2.45608 14.4912 1.71925H16.5789L18.0526 0H10.4386C5.03509 0 2.33333 3.43851 2.33333 7.12262C2.33333 9.94711 4.54386 13.0172 8.47368 13.0172H9.45614C9.33333 13.3856 8.96491 13.9996 8.96491 14.6136C8.96491 15.8417 9.45614 16.3329 10.0702 17.0697C8.35088 17.1925 5.15789 17.5609 2.82456 19.0346C0.614035 20.3854 0 22.2275 0 23.5783C0 26.4028 2.57895 29.1045 8.10526 29.1045C14.7368 29.1045 17.9299 25.4204 17.9299 21.8591C17.9298 19.2802 16.5789 17.9293 14.8596 16.4557ZM5.52632 5.28056C5.52632 2.57888 7.12281 1.35084 8.8421 1.35084C12.0351 1.35084 13.7544 5.64897 13.7544 8.10505C13.7544 11.2979 11.1754 11.912 10.193 11.912C7.12281 11.912 5.52632 8.10505 5.52632 5.28056ZM9.94732 27.3852C5.89469 27.3852 3.31574 25.5432 3.31574 22.8415C3.31574 20.1398 5.77188 19.2801 6.50872 18.9117C8.10521 18.4205 10.1929 18.2977 10.5614 18.2977C10.9298 18.2977 11.1754 18.2977 11.421 18.2977C14.3684 20.3854 15.5964 21.245 15.5964 23.2099C15.5964 25.5432 13.2632 27.3852 9.94732 27.3852Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <span class="footer__line"></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Catamaran;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Catamaran Regular"),
+    local("Catamaran-Regular"),
+    url("../fonts/Catamaran-Regular.woff2") format('woff2'),
+    url("../fonts/Catamaran-Regular.woff") format('woff'),
+    url("../fonts/Catamaran-Regular.eot") format('eot');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Catamaran;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Catamaran Medium"),
+    local("Catamaran-Medium"),
+    url("../fonts/Catamaran-Medium.woff2") format('woff2'),
+    url("../fonts/Catamaran-Medium.woff") format('woff'),
+    url("../fonts/Catamaran-Medium.eot") format('eot');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Catamaran;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Catamaran Bold"),
+    local("Catamaran-Bold"),
+    url("../fonts/Catamaran-Bold.woff2") format('woff2'),
+    url("../fonts/Catamaran-Bold.woff") format('woff'),
+    url("../fonts/Catamaran-Bold.eot") format('eot');
+  font-display: swap;
+}
